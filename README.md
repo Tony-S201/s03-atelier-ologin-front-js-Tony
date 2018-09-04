@@ -71,5 +71,5 @@ Plutôt que de gérer les classes CSS ajoutées au DOM par `className` vouos pou
 
 Au lieu d'utiliser `innerHTML` ou `textContent` pour ajouter du contenu dans le DOM, vous pouvez créer un élément du DOM de toute pièce (par la programmation) par exemple créer des `<div class="error"> ...` directement dans le JS :scream:
 
-- [**mdn** createElement](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
+- [**mdn** createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement)
 - [**mdn** appendChild](https://developer.mozilla.org/en-US/docs/Web/API/Node/appendChild)
