@@ -10,6 +10,7 @@ On commence doucement avec un formulaire de connexion.
 
 1. Réaliser l'intégration
     - En respectant la charte proposée plus bas
+	- Le code HTML est fourni :pray:
   
 2. Mettre en place une validation des champs
     - Chaque champ doit contenir au moins 3 caractères pour être valide
