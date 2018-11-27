@@ -1,1 +1,56 @@
 /* TODO */
+
+body {
+    width : 700px;
+    margin : 0 auto;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+form {
+    width : 500px;
+    margin : auto;
+    margin-top : 60px;
+    border : 1px solid black;
+    padding: 30px;
+    box-shadow: 5px 5px 5px 5px #ccc;
+    border: 0;
+    border-top: 3px solid #00d1b2;
+    border-radius: 4px;
+    position: relative;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
+#form-title {
+    color: #00d1b2;
+    font-weight: 700;
+    
+}
+
+label {
+    display: inline-block;
+    padding-top: 20px;
+    font-weight: 700;
+    color: black;
+}
+
+p {
+    font-size : 0.8em;
+    color: grey;
+}
+
+.field-input {
+    width : 400px;
+}
+
+button {
+    position: absolute;
+    right: 20px;
+    background-color: #00d1b2;
+    color: white;
+    border: 0;
+    padding: 0.5em;
+}
