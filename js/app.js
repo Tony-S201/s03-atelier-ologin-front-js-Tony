@@ -1,7 +1,11 @@
 var app = {
   init: function() {
     var form = document.querySelector('#login-form');
-    form.addEventListener('submit', app.getItem); 
+    var inputUsername = document.querySelector('#field-username');
+    var inputPassword = document.querySelector('#field-password');
+    form.addEventListener('submit', app.getItem);
+    inputUsername.addEventListener('blur', app.colorChange);
+    inputPassword.addEventListener('blur', app.colorChange);    
   },
 
   getItem : function(event){
@@ -9,15 +13,15 @@ var app = {
 
     event.preventDefault();
     var items = app.getItemValue();
-    app.content;
     
+    document.querySelector('#errors').innerHTML = null;
     for (let j = 0; j < items.length; j += 1) {
     
        
       if (items[j].value.length < 3) {
         var message = "Le champ" + app.fields[j] + " doit faire plus de trois caractères.";
         app.addItem(message);
-
+        
     
       }else{
             console.log('ça marche');
@@ -47,14 +51,17 @@ var app = {
   },
 
   colorChange: function(){
-    var input = document.querySelectorAll('#field-username');
-    input.addEventListener("focus", function( event ) {
-      event.target.style.border = "blue"; 
-    }, true);
-    form.addEventListener("blue", function( event ) {
-      event.target.style.border = "";
-    }, true);
-    }
+    var items = app.getItemValue();
+    //var input = document.querySelectorAll('.field-input');
+
+    for (let j = 0; j < items.length; j += 1) {
+      if (items[j].value.length < 3) {
+        items[j].style.borderColor = "red";
+      }else {
+        items[j].style.borderColor = "green";
+      }
+    }; 
+  },
     
   
 };
