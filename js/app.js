@@ -66,5 +66,17 @@ var app = {
   
 };
 
+// Pour pouvoir changer la couleur peu importe le nombre de Input qu'on ajoute sur notre page :
+// idInput : [
+//   'username',
+//   'password',
+// ],
+
+// colorChange2: function(){
+//   for (let i = 0; i < app.idInput.length; i++) {
+//     var input = document.querySelector('#field-'+ app.idInput[i]);
+//     input.addEventListener('blur',app.colorChange);
+//   }
+// }
 
 document.addEventListener('DOMContentLoaded', app.init);
